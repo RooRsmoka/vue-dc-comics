@@ -1,21 +1,25 @@
 <template>
     <header>
-        <div class="header container">
-            <div class="logo">
-                <img src="@/assets/dc-logo.png">
+        <div class="container">
+            <div class="header">
+                <div class="logo">
+                    <img src="@/assets/dc-logo.png">
+                </div>
+                <div class="nav-bar">
+                    <ul>
+                        <li>characters</li>
+                        <li>comics</li>
+                        <li>movies</li>
+                        <li>tv</li>
+                        <li>games</li>
+                        <li>collectibles</li>
+                        <li>videos</li>
+                        <li>fans</li>
+                        <li>news</li>
+                        <li>shop</li>
+                    </ul>
+                </div>
             </div>
-            <ul>
-                <li>characters</li>
-                <li>comics</li>
-                <li>movies</li>
-                <li>tv</li>
-                <li>games</li>
-                <li>collectibles</li>
-                <li>videos</li>
-                <li>fans</li>
-                <li>news</li>
-                <li>shop</li>
-            </ul>
         </div>
     </header>
 </template>
@@ -29,17 +33,19 @@ export default {
 <style lang="scss" scoped>
 @import '@/style/variables.scss';
 header {
+    padding: 20px 0;
 
     .header {
-        height: 100px;
         display: flex;
         justify-content: space-between;
         align-items: center;
 
         .logo {
+            width: 100px;
 
             > img {
-                width: 70%;
+                width: 75%;
+                cursor: pointer;
             }
         }
 
@@ -48,6 +54,7 @@ header {
             display: flex;
 
             li {
+                color: #464646;
                 text-transform: uppercase;
                 margin: 10px;
                 cursor: pointer;

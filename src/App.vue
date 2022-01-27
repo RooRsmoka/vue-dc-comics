@@ -11,7 +11,7 @@
 import HeaderBox from './components/HeaderBox.vue'
 import jumbotronBox from './components/JumbotronBox.vue'
 import MainBox from './components/MainBox.vue'
-import FooterBox from './components/FooterBox.vue' 
+import FooterBox from './components/FooterBox.vue'
 
 
 export default {
@@ -27,4 +27,5 @@ export default {
 
 <style lang="scss">
 @import './style/common.scss';
+@import './style/variables.scss';
 </style>
