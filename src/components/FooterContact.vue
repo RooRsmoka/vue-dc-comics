@@ -7,11 +7,21 @@
                 </div>
                 <div class="social">
                     <p>follow us</p>
-                    <img src="@/assets/footer-facebook.png" alt="Facebook">
-                    <img src="@/assets/footer-twitter.png" alt="Twitter">
-                    <img src="@/assets/footer-youtube.png" alt="Youtube">
-                    <img src="@/assets/footer-pinterest.png" alt="Pinterest">
-                    <img src="@/assets/footer-periscope.png" alt="Periscope">
+                    <a href="#">
+                        <img src="@/assets/footer-facebook.png" alt="Facebook">
+                    </a>
+                    <a href="">
+                        <img src="@/assets/footer-twitter.png" alt="Twitter">
+                    </a>
+                    <a href="">
+                        <img src="@/assets/footer-youtube.png" alt="Youtube">
+                    </a>
+                    <a href="">
+                        <img src="@/assets/footer-pinterest.png" alt="Pinterest">
+                    </a>
+                    <a href="">
+                        <img src="@/assets/footer-periscope.png" alt="Periscope">
+                    </a>
                 </div>
             </div>
         </div>
@@ -53,14 +63,18 @@ export default {
         align-items: center;
 
         p {
+            text-transform: uppercase;
             margin-right: 10px;
-            font-size: 22px;
+            font-weight: bold;
             color: $text-primary-color;
         }
 
-        img {
-            margin: 0 15px;
-            cursor: pointer;
+        a {
+            
+            img {
+                margin: 0 15px;
+                cursor: pointer;
+            }
         }
     }
 }

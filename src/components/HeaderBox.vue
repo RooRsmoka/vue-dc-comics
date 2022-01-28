@@ -7,16 +7,11 @@
                 </div>
                 <div class="nav-bar">
                     <ul>
-                        <li>characters</li>
-                        <li>comics</li>
-                        <li>movies</li>
-                        <li>tv</li>
-                        <li>games</li>
-                        <li>collectibles</li>
-                        <li>videos</li>
-                        <li>fans</li>
-                        <li>news</li>
-                        <li>shop</li>
+                        <li v-for="link in nav" :key="link.id">
+                            <a :href="link.url">
+                                {{link.label}}
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -26,7 +21,9 @@
 
 <script>
 export default {
-    
+    props: {
+        nav: Array
+    }
 }
 </script>
 
@@ -54,13 +51,18 @@ header {
             display: flex;
 
             li {
-                color: #464646;
                 text-transform: uppercase;
                 margin: 10px;
-                cursor: pointer;
 
-                &:hover {
-                    color: $text-primary-color;
+                a {
+                    text-decoration: none;
+                    color: #464646;
+                    font-weight: bold;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: $text-primary-color;
+                    }
                 }
             }
         }
